@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GALERY</title>
+    <style>
+      .background {
+        background-color: #f6d2e0;
+        margin: 0;
+      }
+
+      .container {
+        height: 2160px;
+        width: 2160px;
+      }
+
+      .navbar {
+        height: 60px;
+        width: 100%;
+        overflow: hidden;
+        background-color: #f8b7cd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+      }
+
+      .title {
+        color: #0671b7;
+        font-weight: bold;
+        font-size: 30px;
+        float: left;
+        font-family: "Broadway";
+        margin-top: 20px;
+        margin-left: 40px;
+        transition: transform .2s;
+        cursor: pointer;
+      }
+
+      .title:hover{
+        transform: scale(1.1); 
+
+      }
+
+      .item-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .link-navbar {
+        margin-left: 30px;
+        font-size: 20px;
+        color: #0671b7;
+        border: solid transparent;
+        transition: transform .2s;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 4px;
+      }
+
+      .link-navbar:hover {
+        margin-left: 30px;
+        border: solid #0671b7;
+        background-color: #0671b7;
+        transform: scale(1.1); 
+        cursor: pointer;
+        color: #f6d2e0;
+        border-radius: 5px;
+        padding: 4px;
+      }
+
+      .bordered {
+        border: solid #0671b7;
+        background-color: #0671b7;
+        color: #f8b7cd;
+        border-radius: 5px;
+        padding: 4px;
+      }
+
+      .card-image{
+        border: solid 5px #f8b7cd;
+        height: 400px;
+        width: 22%;
+        margin: 0% 4% 4% 4%;
+        background-color: #f8b7cd;
+        border-radius: 10px;
+      }
+
+      .image-master{
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      
+      .background-galery{
+        z-index: -1;
+        position: absolute;
+        opacity: 0.25;
+        width: 100%;
+        animation: zoom-in-zoom-out 7s ease infinite;
+        height: 150%;
+      }
+
+      .image{
+        width: 100%;
+        height: 70%;
+        margin-left: -2px;
+        margin-top: -2px;
+        border-radius: 10px 10px 0px 0px;
+        border: solid 3px #f8b7cd;
+        object-fit: cover;
+        transition: transform .2s;
+        background-color: #f8b7cd;
+      }
+
+      .image:hover{
+        transform: scale(1.1); 
+
+      }
+
+      .video{
+        width: 100%;
+        height: 400px;
+        margin-left: -2px;
+        margin-top: -2px;
+        border-radius: 10px 10px 0px 0px;
+        transition: transform .2s;
+        border: solid 3px #f8b7cd;
+        background-color: #f8b7cd; 
+      }
+
+      .video:hover{
+        transform: scale(1.1); 
+
+      }
+
+      .web-title{
+        color: #0671b7;
+        padding: 5px;
+        border: solid transparent;
+        background-color: transparent;
+        text-align: center;
+        margin:3%;
+        font-size: 40px;
+      }
+      
+    </style>
+  </head>
+
+  <body class="background">
+    <div class="navbar">
+      <p class="title">DSTCLZ <span style="font-size: 35px">♥</span></p>
+      <div class="item-navbar">
+        <a href="index.html" class="link-navbar">HOME</a>
+        <a href="index2.html" class="link-navbar">SCHEDULE</a>
+        <a href="index3.html" class="link-navbar bordered">GALERY</a>
+        <a href="index4.html" style="margin-right: 40px" class="link-navbar">TEXT ME</a>
+      </div>
+    </div>
+     <img class="background-galery" src="background galery.jpg" alt="">
+    <h1 class="web-title">📸 DESTA'S GALERY  📸</h1>
+   
+    <div class="image-master">
+     <div class="card-image">
+        <img class="image" src="foto1.jpg" alt="">
+        <p style="font-weight: bold;margin-left: 10px;"><span style="color: red;">➤ </span>PT AIRNAV INDONESIA</p>
+        <p style="font-weight: bold;margin-left: 5px;"><span style="color: red;">📅 </span>12 DECEMBER 2023</p>
+
+     </div>
+     <div class="card-image">
+        <video controls loop class="video">
+            <source src="video2.mp4" type="video/mp4">
+          </video>
+
+     </div>
+     <div class="card-image">
+        <img class="image" src="foto3.jpg" alt="">
+        <p style="font-weight: bold;margin-left: 10px;"><span style="color: red;">➤ </span>IKEA ALAM SUTRA </p>
+        <p style="font-weight: bold;margin-left: 5px;"><span style="color: red;">📅 </span>11 FEBRUARY 2024</p>
+     </div>
+
+    </div>
+    <div class="image-master">
+        <div class="card-image">
+            <img class="image" src="foto4.jpg" alt="">
+            <p style="font-weight: bold;margin-left: 10px;"><span style="color: red;">➤ </span>EXHIBITION DREAMSCAPE</p>
+            <p style="font-weight: bold;margin-left: 5px;"><span style="color: red;">📅 </span>3 MAY 2024</p>
+        </div>
+        <div class="card-image">
+            <video controls loop autoplay class="video" >
+                <source src="video1.mp4" type="video/mp4">
+              </video>
+   
+        </div>
+        <div class="card-image">
+            <img class="image" src="foto5.jpg" alt="">
+            <p style="font-weight: bold;margin-left: 10px;"><span style="color: red;">➤ </span>INSTITUT TEKNOLOGI PLN</p>
+            <p style="font-weight: bold;margin-left: 5px;"><span style="color: red;">📅 </span>13 MAY 2024</p>
+        </div>
+   
+       </div>
+
+   
+  </body>
+</html>

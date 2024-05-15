@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SCHEDULE</title>
+
+    <style>
+      .background {
+        background-color: #67a3d9;
+        margin: 0;
+      }
+
+      .container {
+        height: 2160px;
+        width: 2160px;
+      }
+
+      .navbar {
+        height: 60px;
+        width: 100%;
+        overflow: hidden;
+        background-color: #0671b7;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 0;
+      }
+
+      .title {
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        float: left;
+        font-family: "Broadway";
+        margin-top: 20px;
+        margin-left: 40px;
+        transition: transform .2s;
+        cursor: pointer;
+      }
+
+      .title:hover{
+        transform: scale(1.1); 
+
+      }
+
+      .item-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .link-navbar {
+        margin-left: 30px;
+        font-size: 20px;
+        color: white;
+        border: solid transparent;
+        background-color: transparent;
+        padding: 4px;
+        text-decoration: none;
+        transition: transform .2s;
+        cursor: pointer;
+
+
+      }
+
+      .link-navbar:hover {
+        margin-left: 30px;
+        border: solid white;
+        background-color: white;
+        transform: scale(1.1); 
+        cursor: pointer;
+        color: #0671b7;
+        border-radius: 5px;
+        padding: 4px;
+      }
+
+      .bordered {
+        border: solid white;
+        background-color: white;
+        color: #0671b7;
+        border-radius: 5px;
+        padding: 4px;
+      }
+
+      .tes {
+        z-index: -1;
+        position: absolute;
+        width: 80%;
+        text-align: center;
+        /* infinite digunakan untuk looping animasi */
+
+        animation: zoom-in-zoom-out 7s ease infinite;
+        margin-left: 10%;
+        margin-top: 1%;
+      }
+
+      .table-content{
+        border: solid #67a3d9;
+        height: 40px;
+        background-color: #0671b7 ;
+        color: #fff;
+      }
+
+      .pink{
+        background-color: #f6d2e0;
+        color: #0671b7;
+        transition: transform .2s;
+
+      }
+
+      .biru{
+        background-color: #f8b7cd;
+        color: #0671b7;
+        transition: transform .2s;
+
+      }
+
+      .biru:hover{
+        transform: scale(1.1); 
+      }
+
+      .pink:hover{
+        transform: scale(1.1); 
+      }
+
+      @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+        }
+        50% {
+          transform: scale(1.1, 1.1);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="background">
+    <div class="navbar">
+      <p class="title">DSTCLZ <span style="font-size: 35px">♥</span></p>
+      <div class="item-navbar">
+        <a href="index.html" class="link-navbar ">HOME</a>
+        <a href="index2.html" class="link-navbar bordered">SCHEDULE</a>
+        <a href="index3.html" class="link-navbar ">GALERY</a>
+        <a href="index4.html" style="margin-right: 40px" class="link-navbar">TEXT ME</a>
+      </div>
+    </div>
+    <img class="tes" src="background schedule.png" alt="" />
+    <table style="border-collapse: collapse;
+    width: 65%; text-align: center;margin-left: 17%;margin-top: 4%;margin-bottom: 5%;">
+      <thead>
+        <tr>
+          <th class="table-content" style="font-size: 35px; height: 50px;" colspan="6">DESTA'S CLASS SCHEDULE 🕐</th>
+        </tr>
+        <tr>
+          <th class="table-content" rowspan="2">HOURS</th>
+          <th class="table-content" colspan="5"><p style="margin-left: -100px;">DAY</p></th>
+        </tr>
+        <tr>
+          <th  class="table-content">MONDAY</th>
+          <th class="table-content">TUESDAY</th>
+          <th class="table-content">THURSDAY</th>
+          <th class="table-content">FRIDAY</th>
+          <th class="table-content">SATURDAY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td class="table-content">07 : 20</td>
+            <td class="table-content biru" rowspan="3">Pemrograman Web</td>
+            <td class="table-content"> </td>
+            <td class="table-content"></td>
+            <td class="table-content pink" rowspan="3">Pemrograman IoT</td>
+            <td class="table-content"></td>
+        </tr>
+        <tr>
+            <td class="table-content">08 : 10</td>
+            <td class="table-content pink" rowspan="2">Pembelajaran Mesin</td>
+            <td class="table-content" ></td>
+            <td class="table-content"></td>
+        </tr>
+        <tr>
+            <td class="table-content">09 : 50</td>
+            <td class="table-content"></td>
+            <td class="table-content"></td>
+        </tr>
+        <tr>
+            <td class="table-content">10 : 10</td>
+            <td class="table-content"></td>
+            <td class="table-content biru" rowspan="2">Etika Profesi dan Profesional</td>
+            <td class="table-content"></td>
+            <td class="table-content"></td>
+            <td class="table-content biru" rowspan="2">Keamanan Jaringan</td>
+        </tr>
+        <tr>
+            <td class="table-content">11 : 50</td>
+            <td class="table-content"></td>
+            <td class="table-content"></td>
+            <td class="table-content"></td>
+        </tr>
+        <tr>
+            <td class="table-content">13 : 00</td>
+            <td class="table-content pink" rowspan="2">Pengantar Big Data</td>
+            <td class="table-content"></td>
+            <td class="table-content pink" rowspan="2">Manajemen Risiko Teknologi Informasi</td>
+            <td class="table-content biru" rowspan="3">ANALISIS</td>
+            <td class="table-content pink" rowspan="3">Pengantar Multimedia</td>
+        </tr>
+        <tr>
+            <td class="table-content">14 : 40</td>
+            <td class="table-content"></td>
+        </tr>
+        <tr>
+            <td class="table-content">15 : 30</td>
+            <td class="table-content"></td>
+            <td class="table-content"></td>
+            <td class="table-content"></td>
+        </tr>
+        <tr>
+            <td class="table-content">15 : 50</td>
+            <td class="table-content"></td>
+            <td class="table-content"></td>
+            <td class="table-content"></td>
+            <td class="table-content pink" rowspan="2">Sistem Informasi Geografis</td>
+            <td class="table-content"></td>
+        </tr>
+        <tr>
+            <td class="table-content">17 : 30</td>
+            <td class="table-content"></td>
+            <td class="table-content"></td>
+            <td class="table-content"></td>
+            <td class="table-content"></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>
